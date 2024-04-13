@@ -1,7 +1,7 @@
 import Tittle from "./components/header/Header"
 import ToggleButton from "./components/boton/Button"
-import ItemList from "./components/cartList/CardList" 
-import Card from "./components/card/Card"
+import CardList from "./components/cartList/CardList"
+
 
 
 function App() {
@@ -9,10 +9,9 @@ function App() {
 
   return (
     <>
-      {/* <Card />*/}
       <Tittle /> 
       <ToggleButton />
-     {/*  <ItemList /> */}
+      <CardList/>
     </>
   )
 }
