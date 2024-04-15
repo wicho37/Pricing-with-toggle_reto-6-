@@ -3,6 +3,8 @@
 }
 .plan{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .boton{
@@ -19,7 +21,7 @@
     appearance: none;
     outline: none;
     cursor: pointer;
-    background-color: rgb(56, 56, 163);
+    background: hsl(237, 63%, 64%);
     border-radius: 25px;
    /*  transition: 1s; */
 }
@@ -28,7 +30,7 @@
     /* width: 5px; */
     height: 10px;
     border-radius: 50%;
-    background-color: brown;
+    background-color: white;
     position: absolute;
     /* transition: all .5s; */
     transform: translate(2px , 2px);
@@ -38,10 +40,10 @@
     -2px 0 2px rgba(0, 0, 0, .5);
     animation: off 1s forwards;
 }
-.switch:checked{
+/*.switch:checked{
     background-color:rgb(149 183 212); ;
-   /*  transition: all 1s; */
-}
+     transition: all 1s; 
+}*/
 .switch:checked::before{
     /* transition: all.5; */
     transform: translate(15px, 2px);

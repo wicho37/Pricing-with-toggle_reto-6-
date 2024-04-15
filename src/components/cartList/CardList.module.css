@@ -1,0 +1,11 @@
+.row{
+    display: inline-block;
+    width: 100%;
+    text-align: center
+}
+.card{
+    background-color: white;
+    margin: 25px;
+    border-radius: 5px;
+    height: 320px;
+}

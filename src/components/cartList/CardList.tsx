@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import style from "./CardList.module.css"
+
 
     const Card_Data = [
         {
@@ -58,11 +60,11 @@ const CardList = () => {
         }, [])
     
     return (
-      <div className="row">
+      <div className={style.row}>
          {
           productos.map((prod) => (
 
-          <div>
+          <div className={style.card}>
             <h2>{prod.tittle}</h2>
             <p>{prod.price}</p>
             <p>{prod.description}</p> 
