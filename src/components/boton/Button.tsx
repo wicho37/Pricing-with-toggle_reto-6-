@@ -6,11 +6,11 @@ const ToggleButton = () => {
 
   return (
     <div className={style.plan}>
-      <span >Monthly</span>
+      <span >Annually</span>
          <div className={style.boton}>
           <input type="checkbox" name="checkbox" className={style.switch}/>
          </div>
-      <span>Annually</span>
+      <span>Monthly</span>
     </div>
 
   );
