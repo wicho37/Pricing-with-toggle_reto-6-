@@ -5,7 +5,28 @@
 }
 .card{
     background-color: white;
+    color:  hsl(232, 13%, 33%);
+    font-weight: 500;
     margin: 25px;
     border-radius: 5px;
     height: 320px;
+}
+h2{
+    font-size: medium;
+    margin: 70px 0 0;
+    padding: 23px 0 10px 0;
+}
+strong{
+    font-size: 48px;
+    font-weight: 750;
+    letter-spacing: -3px;
+    border-bottom: solid 1px rgb(223, 233, 229);
+}
+
+p{
+    font-size: small;
+    font-weight: 700;
+    border-top: solid 1px rgb(223, 233, 229);
+    width: 85%;
+    margin: 15px;
 }

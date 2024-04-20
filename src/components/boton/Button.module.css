@@ -70,3 +70,8 @@
         width: 12px;
     } */
 }
+
+span{
+    color: hsl(234, 14%, 74%);
+    font-weight: 500;
+}

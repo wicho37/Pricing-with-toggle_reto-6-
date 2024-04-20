@@ -66,7 +66,7 @@ const CardList = () => {
 
           <div className={style.card}>
             <h2>{prod.tittle}</h2>
-            <p>{prod.price}</p>
+            <strong>{prod.price}</strong>
             <p>{prod.description}</p> 
             <p>{prod.description2}</p>
             <p>{prod.description3}</p>
