@@ -67,10 +67,13 @@ const CardList = () => {
           <div className={style.card}>
             <h2>{prod.tittle}</h2>
             <strong>{prod.price}</strong>
-            <p>{prod.description}</p> 
-            <p>{prod.description2}</p>
-            <p>{prod.description3}</p>
-            <button className="btn btn-primary">LEARM MORE</button>
+            <div>
+              <p>{prod.description}</p> 
+              <p>{prod.description2}</p>
+              <p>{prod.description3}</p>
+            </div>
+            
+            <button className={style.button}>LEARM MORE</button>
 
           </div> )
           )

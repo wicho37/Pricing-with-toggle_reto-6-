@@ -20,7 +20,8 @@
     appearance: none;
     outline: none;
     cursor: pointer;
-    background: hsl(237, 63%, 64%);
+   /*  background: hsl(237, 63%, 64%); */
+    background: linear-gradient(90deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%)100%, rgba(0,212,255,1) 100%);
     border-radius: 25px;
    /*  transition: 1s; */
 }
