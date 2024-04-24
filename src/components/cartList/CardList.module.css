@@ -3,6 +3,10 @@
     width: 100%;
     text-align: center
 }
+.card:nth-child(2){
+    background: linear-gradient(180deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%, rgba(0, 212, 255, 1) 100%);
+    color: aliceblue;
+}
 .card{
     background-color: white;
     color:  hsl(232, 13%, 33%);
@@ -12,25 +16,21 @@
     height: 345px;
 }
 
-.row .card .card{
-    background: linear-gradient(180deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%, rgba(0, 212, 255, 1) 100%);
-}
 h2{
     font-size: medium;
     margin: 70px 0 0;
     padding: 23px 0 10px 0;
 }
-strong{
+
+strong {
     font-size: 48px;
     font-weight: 750;
     letter-spacing: -3px;
     border-bottom: solid 1px rgb(223, 233, 229);
-    /* margin: 26px 0; */
     padding: 0 36px 6px;
 }
-strong::first-letter{
-    font-size: 24px;
-}
+
+
 .card div{
     margin: 20px;
 }
@@ -39,10 +39,7 @@ p{
     font-size: small;
     font-weight: 700;
     border-bottom: solid 1px rgb(223, 233, 229);
-   /*  margin: 9px;  */  
     padding: 0 0px 15px;
-   /*  margin: 15px;
-*/
 } 
 .button {
     padding: 10px;
@@ -50,7 +47,9 @@ p{
     border: none;
     color: white ;
     border-radius: 5px;
-  /*   background: hsl(237, 63%, 64%); */
     background: linear-gradient(90deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%)100%, rgba(0,212,255,1) 100%);
-    margin: 4px 0 ;
+    margin: 4px 0 
+}
+.card .button:nth-child(2){
+    color: red ;
 }
