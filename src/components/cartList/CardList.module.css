@@ -18,16 +18,19 @@
 
 h2{
     font-size: medium;
-    margin: 70px 0 0;
+    margin: 35px 0 0;
     padding: 23px 0 10px 0;
 }
 
-strong {
+.price {
     font-size: 48px;
     font-weight: 750;
     letter-spacing: -3px;
     border-bottom: solid 1px rgb(223, 233, 229);
     padding: 0 36px 6px;
+}
+.price::first-letter{
+    font-size: 20px;
 }
 
 
@@ -51,5 +54,17 @@ p{
     margin: 4px 0 
 }
 .card .button:nth-child(2){
-    color: red ;
+    background-color: aliceblue;
+    color: hsl(237, 63%, 64%);
+}
+
+
+@media (min-width: 1200px) {
+    .row{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        height: 700px;
+        padding: 28px;
+    }
 }
