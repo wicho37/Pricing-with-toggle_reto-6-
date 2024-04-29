@@ -38,7 +38,7 @@ import style from "./CardList.module.css"
         return new Promise((resolve, reject) => {
           setTimeout(() => {
             resolve(Card_Data)
-          }, 2000);
+          }, 1000);
         })
       }
 
@@ -66,8 +66,9 @@ const CardList = () => {
 
           <div className={style.card}>
             <h2>{prod.tittle}</h2>
-            <strong className={style.price}>{prod.price}</strong>
+            
             <div>
+              <p className={style.price}>{prod.price}</p>
               <p>{prod.description}</p> 
               <p>{prod.description2}</p>
               <p>{prod.description3}</p>

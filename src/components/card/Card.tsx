@@ -5,8 +5,8 @@ import style from "./Card.module.css"
 const Card = () => {
 
     return (
-        <div>
-            <section className={style.img}  />
+        <div className={style.h4}>
+          <h4>hola</h4>
         </div>
     )
 }

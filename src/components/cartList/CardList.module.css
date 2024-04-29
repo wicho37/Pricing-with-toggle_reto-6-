@@ -4,7 +4,7 @@
     text-align: center
 }
 .card:nth-child(2){
-    background: linear-gradient(180deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(180deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
     color: aliceblue;
 }
 .card{
@@ -13,26 +13,32 @@
     font-weight: 500;
     margin: 25px;
     border-radius: 5px;
-    height: 345px;
+    height: 365px;
 }
 
 h2{
     font-size: medium;
     margin: 35px 0 0;
-    padding: 23px 0 10px 0;
+    padding: 23px 0 0px 0;
 }
 
-.price {
+/* .price {
     font-size: 48px;
     font-weight: 750;
     letter-spacing: -3px;
     border-bottom: solid 1px rgb(223, 233, 229);
-    padding: 0 36px 6px;
-}
+    padding: 0 72px 6px;
+}*/
 .price::first-letter{
-    font-size: 20px;
+    font-size: 25px;
+    margin: 1px;
+} 
+.price{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -3px;
 }
-
 
 .card div{
     margin: 20px;
@@ -50,7 +56,7 @@ p{
     border: none;
     color: white ;
     border-radius: 5px;
-    background: linear-gradient(90deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%)100%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%)100%);
     margin: 4px 0 
 }
 .card .button:nth-child(2){
@@ -64,7 +70,15 @@ p{
         display: flex;
         position: relative;
         justify-content: center;
-        height: 700px;
-        padding: 28px;
+        height: 545px;
+        padding: 65px 5px;;
+    }
+    .card{
+        height: 383px;
+        width: 23.9%;
+        margin: 0;
+    }
+    .price{
+        padding: 0 58px 6px;        ;
     }
 }
