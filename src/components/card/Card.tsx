@@ -6,7 +6,7 @@ const Card = () => {
 
     return (
         <div className={style.h4}>
-          <h4>hola</h4>
+          <img src="url(/src/assets/Captura-de-pantalla.png)" alt="" />
         </div>
     )
 }

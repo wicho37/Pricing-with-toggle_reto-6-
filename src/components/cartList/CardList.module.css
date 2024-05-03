@@ -12,8 +12,12 @@
     color:  hsl(232, 13%, 33%);
     font-weight: 500;
     margin: 25px;
-    border-radius: 5px;
-    height: 365px;
+    border-radius: 10px;
+    height: 400px;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.08)
 }
 
 h2{
@@ -30,15 +34,15 @@ h2{
     padding: 0 72px 6px;
 }*/
 .price::first-letter{
-    font-size: 25px;
-    margin: 19px -69px 0px 54px;
+    font-size: 42px;
+    margin: 21px -33px 0px 44px;
     float: left
 } 
 .price{
-    font-size: 48px;
-    font-weight: 750;
+    font-size: 70px;
+    font-weight: 780;
     margin: 0;
-    letter-spacing: -2px;
+    letter-spacing: -4px;
 }
 
 .card div{
@@ -78,7 +82,9 @@ p{
         height: 383px;
         width: 23.9%;
         margin: 0;
+        cursor: pointer
     }
+    
     .price{
         padding: 0 58px 6px;        ;
     }

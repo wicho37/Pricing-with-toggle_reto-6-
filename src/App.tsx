@@ -14,8 +14,8 @@ function App() {
       <Tittle /> 
       <ToggleButton />
       <CardList/>
-      {/* <Card /> */}
-    </div>
+{/*       <Card />
+ */}    </div>
   )
 }
 

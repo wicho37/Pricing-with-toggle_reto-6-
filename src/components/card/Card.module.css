@@ -1,5 +1,4 @@
 .h4{
-    font-size: 50px;
-    background-image: url("../../assets/bg-bottom.svg");
-    background-repeat: repeat-y;
+    background-image: url("../../assets/bg-top.svg");
+    background-repeat: no-repeat
 }
