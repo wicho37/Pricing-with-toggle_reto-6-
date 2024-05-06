@@ -1,0 +1,8 @@
+@media (min-width: 1440px){
+        root{
+            background-image: url("./assets/bg-bottom.svg");
+            background-repeat: no-repeat;
+            background: hsl(236deg 72% 79% / 17%)
+
+}
+}
