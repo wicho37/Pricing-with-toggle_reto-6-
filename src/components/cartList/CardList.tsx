@@ -71,9 +71,9 @@ const CardList = () => {
         checkBox.addEventListener("change", function(){
 
           if(checkBox.checked){
-            console.log("checked");
+          
           }else{
-            console.log("unchecked");
+            
           }
         })
 
