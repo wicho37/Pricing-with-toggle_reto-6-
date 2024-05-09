@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import style from "./CardList.module.css"
 
 
+
     const Card_Data = [
         {
           id: 1,
           tittle: 'Basic',
           price: '$19.99',
+          priceYear: "$199.99",
           description: "500 GB Storage",
           description2: "2 User Allowed",
           description3: "Send up to 3 GB"
@@ -17,6 +19,7 @@ import style from "./CardList.module.css"
           id: 2,
           tittle: 'Profecional',
           price: '$24.99' ,
+          priceYear: '$240.99' ,
           description: '1 TB Storage',
           description2: "5 User Allowed",
           description3: "Send up to 10 GB"
@@ -26,6 +29,7 @@ import style from "./CardList.module.css"
             id: 3,
             tittle: 'Master',
             price: '$39.99',
+            priceYear:"$399.99",
             description: '2TB Storage',
             description2: "10 User Allowed",
             description3: "Send up to 20 GB"
@@ -35,7 +39,7 @@ import style from "./CardList.module.css"
       
 
       const pedirDatos = () => {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
           setTimeout(() => {
             resolve(Card_Data)
           }, 1000);
@@ -58,6 +62,22 @@ const CardList = () => {
              console.log(error)
            })
         }, [])
+    
+
+        const checkBox = document.querySelector(".switch") ;
+        const Montlhy=  document.querySelector("#monthly") ;
+        const Annually =  document.querySelector("#yearly") ;
+
+        checkBox.addEventListener("change", function(){
+
+          if(checkBox.checked){
+            console.log("checked");
+          }else{
+            console.log("unchecked");
+          }
+        })
+
+
     
     return (
       <div className={style.row}>
@@ -86,17 +106,3 @@ const CardList = () => {
 
 
 export default CardList
-    
-/*{ <div className="pricing-container">
-
-<div className="pricing">
-    <div className="price monthly">
-        <h2>$10</h2>
-        <span>/month</span>
-    </div>
-    <div className="price annually">
-        <h2>$100</h2>
-        <span>/year</span>
-    </div>
-</div>
-</div> }*/

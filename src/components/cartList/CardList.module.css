@@ -19,20 +19,11 @@
 .card:hover{
     transform: scale(1.08)
 }
-
 h2{
     font-size: x-large;
     margin: 35px 0 0;
     padding: 23px 0 0px 0;
 }
-
-/* .price {
-    font-size: 48px;
-    font-weight: 750;
-    letter-spacing: -3px;
-    border-bottom: solid 1px rgb(223, 233, 229);
-    padding: 0 72px 6px;
-}*/
 .price::first-letter{
     font-size: 42px;
     margin: 21px -33px 0px 43px;
@@ -44,11 +35,9 @@ h2{
     margin: 0;
     letter-spacing: -4px;
 }
-
 .card div{
     margin: 20px;
 }
-
 p{
     font-size: small;
     font-weight: 700;
@@ -65,10 +54,6 @@ p{
     background: linear-gradient(90deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%)100%);
     margin: 4px 0 
 }
-.card .button:nth-child(2){
-    background-color: aliceblue;
-    color: hsl(237, 63%, 64%);
-}
 
 
 @media (min-width: 1440px) {
@@ -77,9 +62,7 @@ p{
         position: relative;
         justify-content: center;
         height: 602px;
-        padding: 65px 5px;;
-        background-image: url(../../assets/bg-bottom.svg);
-        background-repeat: no-repeat;
+        padding: 65px 5px
     }
     .card{
         height: 444px;
@@ -87,7 +70,6 @@ p{
         margin: 0;
         cursor: pointer
     }
-    
     .price{
         padding: 0 58px 6px;        ;
     }

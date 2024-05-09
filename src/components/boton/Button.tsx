@@ -1,4 +1,5 @@
-import style from "./Button.module.css"
+import style from "./Button.module.css" 
+import "./Button.module.css"
 
 
 
@@ -6,11 +7,15 @@ const ToggleButton = () => {
 
   return (
     <div className={style.plan}>
-      <span >Annually</span>
+      <span id="yearly">Annually</span>
          <div className={style.boton}>
           <input type="checkbox" name="checkbox" className={style.switch}/>
-         </div>
-      <span>Monthly</span>
+         </div> 
+         {/* <label className={style.switch}>
+             <input type="checkbox" id="toggle" />
+             <span className="slider"></span>
+         </label>*/}
+      <span id="monthly">Monthly</span>
     </div>
 
   );

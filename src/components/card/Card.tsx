@@ -1,15 +1,20 @@
-import style from "./Card.module.css"
+/* import { useState } from "react";
 
 
+function ToggleButton() {
+  const [isActive, setIsActive] = useState(false);
 
-const Card = () => {
+  const toggleButton = () => {
+    setIsActive(!isActive);
+  };
 
-    return (
-        <div className={style.h4}>
-          <img src="url(/src/assets/Captura-de-pantalla.png)" alt="" />
-        </div>
-    )
+  return (
+    <div>
+      <button onClick={toggleButton} style={{ backgroundColor: isActive ? 'green' : 'red' }}>
+        {isActive ? 'Activado' : 'Desactivado'}
+      </button>
+    </div>
+  );
 }
 
-
-export default Card
+export default ToggleButton; */
