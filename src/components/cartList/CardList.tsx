@@ -39,10 +39,9 @@ import style from "./CardList.module.css"
       
 
       const pedirDatos = () => {
+        
         return new Promise((resolve) => {
-          setTimeout(() => {
             resolve(Card_Data)
-          }, 1000);
         })
       }
 
@@ -64,21 +63,7 @@ const CardList = () => {
         }, [])
     
 
-        const checkBox = document.querySelector(".switch") ;
-        const Montlhy=  document.querySelector("#monthly") ;
-        const Annually =  document.querySelector("#yearly") ;
-
-        checkBox.addEventListener("change", function(){
-
-          if(checkBox.checked){
-          
-          }else{
-            
-          }
-        })
-
-
-    
+    console.log("hasta aqui llega el valor")
     return (
       <div className={style.row}>
          {
@@ -94,8 +79,8 @@ const CardList = () => {
               <p>{prod.description3}</p>
             </div>
             
-            <button className={style.button}>LEARM MORE</button>
-
+            <a href="#"><button className={style.button}>LEARM MORE</button></a>
+          
           </div> )
           )
          }
@@ -106,3 +91,23 @@ const CardList = () => {
 
 
 export default CardList
+
+
+
+
+
+
+
+
+/*      const checkBox = document.querySelector(".switch") ;
+        const Montlhy=  document.querySelectorAll("#monthly") ;
+        const Annually =  document.querySelectorAll("#yearly") ;
+
+        checkBox.addEventListener("change", function(){
+
+          if(checkBox.checked){
+          
+          }else{
+            
+          }
+        }) */
