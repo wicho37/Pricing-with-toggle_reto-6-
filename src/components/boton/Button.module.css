@@ -6,14 +6,12 @@
     align-items: center;
     justify-content: center;
 }
-
 .boton{
     width: 55px;
     height: 29px;
     margin: 0 15px;
     cursor: pointe;
 }
-
 .switch{
     position: relative;
     width: 45px;
@@ -33,23 +31,16 @@
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    /* transition: all .5s; */
     transform: translate(2px , 2px);
-   /*  transition-timing-function: cubic-bezier(.81,_.02, 0, 2.13);
-    transition-delay: 1s;  */
-    box-shadow: inset 2px 0 4px rgba(0, 0, 0, .5),
-    -2px 0 2px rgba(0, 0, 0, .5);
-     animation: off 1s forwards; 
+    box-shadow: inset 2px 0 4px rgba(0, 0, 0, .5), -2px 0 2px rgba(0, 0, 0, .5);
+    animation: off 1s forwards; 
 }
 switch:checked{
     background-color:rgb(149 183 212); ;
-     transition: all 1s; 
+    transition: all 1s; 
 }
 .switch:checked::before{
-    /* transition: all.5;  */
     transform: translate(15px, 2px);
-    /* transition-timing-function: cubic-bezier(.81,_.02, 0, 2.13);
-    transition-delay: 1s;  */
     box-shadow: inset -2px 0 4px rgba(0, 0, 0, .5),
     -2px 0 2px rgba(0, 0, 0, .5);
     right: 17px;
@@ -60,55 +51,12 @@ switch:checked{
     0%, 50%, 100%{
         width: 21px;
     }
-     /*  25%{
-        width: 12px;
-    }  */
 }
 @keyframes off{
     0%, 50%, 100%{
         width: 21px;
     }
-    /* 25%{
-        width: 12px;
-    }  */
 } 
-
-/* 
-.switch input{
-    opacity: 0;
-}
-
-.switch{
-    display: inline-block;
-    width: 60px;
-    height: 32px;
-    position: relative;
-    cursor: pointer;
-    
-}
-.slider{
-    position: absolute;
-    background: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-    top: 0;
-    right: 0;
-    bottom:0;
-    left: 0;
-    border-radius: 35px;
-}
-.slider::before{
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #fff;
-    bottom: 4px;
-    left: 4px
-}
-input:checked+.slider::before{
-    transform: translateX(26px);
-}
- */
-
 span{
     color: hsl(234, 14%, 74%);
     font-weight: 500;

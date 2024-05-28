@@ -2,23 +2,21 @@ import style from "./Button.module.css"
 import "./Button.module.css"
 
 
-
-const ToggleButton = () => {
+const ToggleButton = ({setDataToggle}:any) => {
     
   const manejoToggle = (e:any) => {
     console.log("manejoToggle", e.target.checked)
+    setDataToggle(e.target.checked)
   }
+
   return (
     <div className={style.plan}>
       <span id="yearly">Annually</span>
-         <div className={style.boton}>
-         
-          <input onChange={(e)=>manejoToggle(e)} type="checkbox" name="checkbox" className={style.switch}/>
-         </div> 
-         
+          <div className={style.boton}>
+            <input onChange={(e)=>manejoToggle(e)} type="checkbox" name="checkbox" className={style.switch}/>
+          </div> 
       <span id="monthly">Monthly</span>
     </div>
-
   );
 }
 

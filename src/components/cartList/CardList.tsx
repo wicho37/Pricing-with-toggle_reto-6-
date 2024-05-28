@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import style from "./CardList.module.css"
 
 
-
-    const Card_Data = [
+const Card_Data = [
         {
           id: 1,
           tittle: 'Basic',
@@ -11,19 +10,16 @@ import style from "./CardList.module.css"
           priceYear: "$199.99",
           description: "500 GB Storage",
           description2: "2 User Allowed",
-          description3: "Send up to 3 GB"
-          
-          
+          description3: "Send up to 3 GB"  
         },
         {
           id: 2,
           tittle: 'Profecional',
           price: '$24.99' ,
-          priceYear: '$240.99' ,
+          priceYear: '$249.99' ,
           description: '1 TB Storage',
           description2: "5 User Allowed",
           description3: "Send up to 10 GB"
-         
         },
         {
             id: 3,
@@ -33,7 +29,6 @@ import style from "./CardList.module.css"
             description: '2TB Storage',
             description2: "10 User Allowed",
             description3: "Send up to 20 GB"
-            
           }
       ]
       
@@ -46,11 +41,9 @@ import style from "./CardList.module.css"
       }
 
 
-const CardList = () => {
+const CardList = ({dataToggle}:any) => {
    const [productos, setProductos] = useState([])
    console.log(productos)
-
-   
 
    useEffect(() => {
     pedirDatos()
@@ -62,8 +55,6 @@ const CardList = () => {
            })
         }, [])
     
-
-    console.log("hasta aqui llega el valor")
     return (
       <div className={style.row}>
          {
@@ -73,41 +64,19 @@ const CardList = () => {
             <h2>{prod.tittle}</h2>
             
             <div>
-              <p className={style.price}>{prod.price}</p>
+              {dataToggle ?<p className={style.price}>{prod.price}</p> :<p className={style.price}>{prod.priceYear} </p>}
               <p>{prod.description}</p> 
               <p>{prod.description2}</p>
               <p>{prod.description3}</p>
             </div>
             
             <a href="#"><button className={style.button}>LEARM MORE</button></a>
-          
           </div> )
           )
          }
       </div>
     )
- 
 }
 
 
 export default CardList
-
-
-
-
-
-
-
-
-/*      const checkBox = document.querySelector(".switch") ;
-        const Montlhy=  document.querySelectorAll("#monthly") ;
-        const Annually =  document.querySelectorAll("#yearly") ;
-
-        checkBox.addEventListener("change", function(){
-
-          if(checkBox.checked){
-          
-          }else{
-            
-          }
-        }) */

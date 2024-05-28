@@ -1,7 +1,6 @@
 import style from "./Header.module.css"
 
-
-function Tittle () {
+const Tittle = () => {
     
     return(
         <div className={style.header}>
