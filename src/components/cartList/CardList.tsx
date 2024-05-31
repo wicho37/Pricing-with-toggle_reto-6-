@@ -64,7 +64,10 @@ const CardList = ({dataToggle}:any) => {
             <h2>{prod.tittle}</h2>
             
             <div>
-              {dataToggle ?<p className={style.price}>{prod.price}</p> :<p className={style.price}>{prod.priceYear} </p>}
+              {dataToggle ? 
+               <p className={style.price}>{prod.price}</p> 
+               :<p className={style.price} >{prod.priceYear}</p>
+              }
               <p>{prod.description}</p> 
               <p>{prod.description2}</p>
               <p>{prod.description3}</p>
