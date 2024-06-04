@@ -33,7 +33,9 @@ h2{
     padding: 0 0px 26px;
 }
 .price::first-letter{
-    font-size: medium;
+    font-size: 34px;
+    float: left;
+    margin: 27px -31px 0px 30px;
 }
 .card div{
     margin: 20px;
@@ -71,6 +73,9 @@ p{
         cursor: pointer
     }
     .price{
-        padding: 0 36px 6px;        ;
+        padding: 0 36px 6px;
+    }
+    .price::first-letter{
+        margin: 27px -31px 0px 0px;
     }
 }

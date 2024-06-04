@@ -40,8 +40,7 @@ const Card_Data = [
         })
       }
 
-
-const CardList = ({dataToggle}:any) => {
+   const CardList = ({dataToggle}:any) => {
    const [productos, setProductos] = useState([])
    console.log(productos)
 
